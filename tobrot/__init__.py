@@ -26,7 +26,7 @@ logging.basicConfig(
     datefmt="%d-%b-%y %H:%M:%S",
     handlers=[
         RotatingFileHandler(
-            "FuZionXLogs.txt", maxBytes=50000000, backupCount=10
+            "FuZionXLogs.txt", maxBytes=1950000000, backupCount=10
         ),
         logging.StreamHandler(),
     ],
@@ -92,7 +92,7 @@ MAX_TG_SPLIT_FILE_SIZE = int(os.environ.get("MAX_TG_SPLIT_FILE_SIZE", "107286400
 FINISHED_PROGRESS_STR = os.environ.get("FINISHED_PROGRESS_STR", "■")
 UN_FINISHED_PROGRESS_STR = os.environ.get("UN_FINISHED_PROGRESS_STR", "□")
 # add offensive API
-TG_OFFENSIVE_API = os.environ.get("TG_OFFENSIVE_API", None)
+TG_OFFENSIVE_API = os.environ.get("TG_OFFENSIVE_API", leech)
 CUSTOM_FILE_NAME = os.environ.get("CUSTOM_FILE_NAME", "")
 LEECH_COMMAND = os.environ.get("LEECH_COMMAND", "leech")
 LEECH_UNZIP_COMMAND = os.environ.get("LEECH_UNZIP_COMMAND", "extract")
