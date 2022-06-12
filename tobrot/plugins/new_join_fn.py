@@ -15,7 +15,7 @@ async def new_join_f(client, message):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton('Channel', url='https://t.me/FuZionXTorrentQuater')
+                        InlineKeyboardButton('Owner', url='tg://settings/')
                     ]
                 ]
                )
