@@ -69,9 +69,9 @@ SUDO_USERS = [int(sudos) if (' ' not in os.environ.get('SUDO_USERS', '')) else i
 # the download location, where the HTTP Server runs
 DOWNLOAD_LOCATION = "./DOWNLOADS"
 # Telegram maximum file upload size
-MAX_FILE_SIZE = 50000000
-TG_MAX_FILE_SIZE = 2097152000
-FREE_USER_MAX_FILE_SIZE = 50000000
+MAX_FILE_SIZE = 1950000000
+TG_MAX_FILE_SIZE = 1950000000
+FREE_USER_MAX_FILE_SIZE = 1950000000
 AUTH_CHANNEL.append(OWNER_ID)
 AUTH_CHANNEL += SUDO_USERS
 # chunk size that should be used with requests
@@ -103,8 +103,8 @@ GLEECH_ZIP_COMMAND = os.environ.get("GLEECH_ZIP_COMMAND", "gleechzip")
 YTDL_COMMAND = os.environ.get("YTDL_COMMAND", "ytdl")
 GYTDL_COMMAND = os.environ.get("GYTDL_COMMAND", "gytdl")
 RCLONE_CONFIG = os.environ.get("RCLONE_CONFIG", "")
-DESTINATION_FOLDER = os.environ.get("DESTINATION_FOLDER", "FuZionXBot")
-INDEX_LINK = os.environ.get("INDEX_LINK", "https://covid.demonn.workers.dev/0:/FuZionXBot https://infyplexultra.mysterydemon.workers.dev/0:/FuZionXBot")
+DESTINATION_FOLDER = os.environ.get("DESTINATION_FOLDER", "")
+INDEX_LINK = os.environ.get("")
 TELEGRAM_LEECH_COMMAND = os.environ.get("TELEGRAM_LEECH_COMMAND", "tleech")
 TELEGRAM_LEECH_UNZIP_COMMAND = os.environ.get("TELEGRAM_LEECH_UNZIP_COMMAND", "tleechunzip")
 CANCEL_COMMAND_G = os.environ.get("CANCEL_COMMAND_G", "cancel")
@@ -130,9 +130,9 @@ MEDIAINFO_CMD = os.environ.get("MEDIAINFO_CMD", "mediainfo")
 UPDATES_CHANNEL = os.environ.get("UPDATES_CHANNEL", "")
 CAP_STYLE = os.environ.get("CAP_STYLE", "code")
 UPTOBOX_TOKEN = os.environ.get("UPTOBOX_TOKEN", "")
-EMAIL = os.environ.get("EMAIL", "mysterysd.sd@gmail.com")
-PWSSD = os.environ.get("PWSSD", "S#D#97531")
-GDRIVE_FOLDER_ID = os.environ.get("GDRIVE_FOLDER_ID", "0AN3LeVWuYvwEUk9PVA")
+EMAIL = os.environ.get("EMAIL", "")
+PWSSD = os.environ.get("PWSSD", "")
+GDRIVE_FOLDER_ID = os.environ.get("GDRIVE_FOLDER_ID", "")
 CRYPT = os.environ.get("CRYPT", "S3htTzl3aDdHUWdJWDhLZVV2MlpSVGlkZ0RVYU0xc29oQlNKSENGakRaOD0%3D")
 #PHPSESSID = os.environ.get("PHPSESSID", "dslvec02r5mo3co40vsq6154eh")
 HUB_CRYPT = os.environ.get("HUB_CRYPT", "dVAwSkpDU0FWVnNYV3hSZU40RkhrRU53RzVmdjVBbFd3RThPeFllMmhSND0%3D")
@@ -154,8 +154,6 @@ DEF_IMDB_TEMPLATE = os.environ.get("IMDB_TEMPLATE", """<i><b>⚡𝐓𝐢𝐭𝐥
 <b>⚡𝐒𝐮𝐛𝐭𝐢𝐭𝐥𝐞𝐬: </b>
 
 <b>⚡𝐒𝐭𝐨𝐫𝐲 𝐋𝐢𝐧𝐞: </b><code>{plot}</code>
-
-⚡️𝐉𝐨𝐢𝐧 𝐍𝐨𝐰 :  @FuZionX </i>
 
 ⚡️✅ 𝑪𝒍𝒊𝒄𝒌 𝑫𝒐𝒘𝒏 𝒂𝒏𝒅 𝑺𝒕𝒂𝒓𝒕 𝒕𝒉𝒆 𝑩𝒐𝒕 𝒕𝒐 𝑮𝒆𝒕 𝒕𝒉𝒆 𝑭𝒊𝒍𝒆 ✅ !! ⬇️ ⬇️""")
 LOG_CHANNEL = os.environ.get("LOG_CHANNEL", "")
