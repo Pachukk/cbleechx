@@ -60,7 +60,7 @@ OWNER_ID = int(os.environ.get("OWNER_ID", "1584694165"))
 
 # Get these values from my.telegram.org
 # to store the channel ID who are authorized to use the bot
-AUTH_CHANNEL = [int(x) for x in os.environ.get("AUTH_CHANNEL", "-1001754268442").split()]
+AUTH_CHANNEL = [int(x) for x in os.environ.get("AUTH_CHANNEL", "1357114313").split()]
 
 # Cuz most ppl dunno AUTH_CHANNEL also works as SUDO
 SUDO_USERS = [int(sudos) if (' ' not in os.environ.get('SUDO_USERS', '')) else int(sudos) for sudos in os.environ.get('SUDO_USERS', '').split()]
