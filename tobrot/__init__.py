@@ -14,9 +14,8 @@ import dotenv
 import telegram.ext as tg
 
 from pyrogram import Client
-
-if os.path.exists("FuZionXLogs.txt"):
-    with open("FuZionXLogs.txt", "r+") as f_d:
+if os.path.exists("TorrentLeech-Gdrive.txt"):
+    with open("Torrentleech-Gdrive.txt", "r+") as f_d:
         f_d.truncate(0)
 
 # the logging things
@@ -92,7 +91,7 @@ MAX_TG_SPLIT_FILE_SIZE = int(os.environ.get("MAX_TG_SPLIT_FILE_SIZE", "107286400
 FINISHED_PROGRESS_STR = os.environ.get("FINISHED_PROGRESS_STR", "■")
 UN_FINISHED_PROGRESS_STR = os.environ.get("UN_FINISHED_PROGRESS_STR", "□")
 # add offensive API
-TG_OFFENSIVE_API = os.environ.get("TG_OFFENSIVE_API", leech)
+TG_OFFENSIVE_API = os.environ.get("TG_OFFENSIVE_API", "None")
 CUSTOM_FILE_NAME = os.environ.get("CUSTOM_FILE_NAME", "")
 LEECH_COMMAND = os.environ.get("LEECH_COMMAND", "leech")
 LEECH_UNZIP_COMMAND = os.environ.get("LEECH_UNZIP_COMMAND", "extract")
