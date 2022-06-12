@@ -113,10 +113,10 @@ async def start(client, message):
     """/start command"""
     buttons = [
             [
-                InlineKeyboardButton('🚦 Channel 🚦', url='https://t.me/FuZionX'),
+                InlineKeyboardButton('Owner', url='tg://settings/'),
             ],
             [
-                InlineKeyboardButton('🛃 Torrent Group 🛃', url='https://t.me/FXTorrentz'),
+                InlineKeyboardButton('Myran', url='https://t.me/njnmyr'),
             ]
             ]
     reply_markup=InlineKeyboardMarkup(buttons)
