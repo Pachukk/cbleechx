@@ -54,14 +54,14 @@ for imp in ["TG_BOT_TOKEN", "APP_ID", "API_HASH", "OWNER_ID", "AUTH_CHANNEL"]:
 '''
 
 # The Telegram API things
-TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "5139162631:AAHGWHHbnbu7k5jOjXW-axcNuJcSRpBktr4")
-APP_ID = os.environ.get("APP_ID", "6878048")
-API_HASH = os.environ.get("API_HASH", "3833ae3a7415af46df46a83a3ba2c432")
-OWNER_ID = int(os.environ.get("OWNER_ID", "1242011540"))
+TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "")
+APP_ID = os.environ.get("APP_ID", "")
+API_HASH = os.environ.get("API_HASH", ")
+OWNER_ID = int(os.environ.get("OWNER_ID", ""))
 
 # Get these values from my.telegram.org
 # to store the channel ID who are authorized to use the bot
-AUTH_CHANNEL = [int(x) for x in os.environ.get("AUTH_CHANNEL", "-1001270496331 -1001508663868").split()]
+AUTH_CHANNEL = [int(x) for x in os.environ.get("AUTH_CHANNEL", "").split()]
 
 # Cuz most ppl dunno AUTH_CHANNEL also works as SUDO
 SUDO_USERS = [int(sudos) if (' ' not in os.environ.get('SUDO_USERS', '')) else int(sudos) for sudos in os.environ.get('SUDO_USERS', '').split()]
@@ -77,7 +77,7 @@ AUTH_CHANNEL += SUDO_USERS
 # chunk size that should be used with requests
 CHUNK_SIZE = int(os.environ.get("CHUNK_SIZE", "128"))
 # default thumbnail to be used in the videos
-DEF_THUMB_NAIL_VID_S = os.environ.get("DEF_THUMB_NAIL_VID_S", "https://telegra.ph/file/3a7f09b89943b51cdba38.jpg")
+DEF_THUMB_NAIL_VID_S = os.environ.get("DEF_THUMB_NAIL_VID_S", "")
 # maximum message length in Telegram
 MAX_MESSAGE_LENGTH = 4096
 # set timeout for subprocess
@@ -127,7 +127,7 @@ HELP_COMMAND = os.environ.get("HELP_COMMAND", "help")
 SPEEDTEST = os.environ.get("SPEEDTEST", "speedtest")
 TSEARCH_COMMAND = os.environ.get("TSEARCH_COMMAND", "tshelp")
 MEDIAINFO_CMD = os.environ.get("MEDIAINFO_CMD", "mediainfo")
-UPDATES_CHANNEL = os.environ.get("UPDATES_CHANNEL", "@FuZionX")
+UPDATES_CHANNEL = os.environ.get("UPDATES_CHANNEL", "")
 CAP_STYLE = os.environ.get("CAP_STYLE", "code")
 UPTOBOX_TOKEN = os.environ.get("UPTOBOX_TOKEN", "")
 EMAIL = os.environ.get("EMAIL", "mysterysd.sd@gmail.com")
